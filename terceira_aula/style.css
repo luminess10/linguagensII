@@ -1,0 +1,45 @@
+.imagem_centro {
+    height: 200px;
+    background-image: url("./banner-computacao.jpg");
+    background-size: 100% 100%, cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+html{
+    font-size: 62.5%;
+}
+main{
+    display: block;
+    width: 80%;
+    padding: 20px;
+    color: rgb(4, 44, 19);
+}
+.texto{
+    font-size: 200%;
+}
+strong{
+    color: darkgreen;
+}
+li{
+    border: 1px solid darkgray;
+}
+b{
+    display: block;
+    font-size: 200%;
+    text-align: center;
+    background-color: rgb(65, 144, 170);
+}
+.item1{
+    background-color: aliceblue;
+}
+.item2{
+    background-color: rgb(248, 223, 227);
+}
+@media (min-width: 550px){
+    body{
+    background-color: lightyellow;
+    }
+    .imagem_centro{
+        height: 290px;
+    }
+    }
