@@ -1,0 +1,91 @@
+* {
+  box-sizing: border-box;
+}
+
+.titulo {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+
+.container {
+  max-width: 720px;
+  margin: auto;
+}
+
+.jogador0,
+.jogador1 {
+  border: 2px solid black;
+  width: 300px;
+  height: 300px;
+  margin: 2px;
+}
+
+.jogador0 {
+  float: left;
+}
+
+.jogador1 {
+  float: right;
+}
+
+.jogadores::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.nome-jogador {
+  margin: 0;
+  text-align: center;
+  font-size: 24px;
+  background-color: rgb(17, 47, 73);
+  color: white;
+}
+
+.caixa-pontuacao-rodada-0,
+.caixa-pontuacao-rodada-1 {
+  position: relative;
+  top: 100px;
+  left: 20px;
+  background-color: aliceblue;
+  display: inline-block;
+  width: 250px;
+  height: 100px;
+  text-align: center;
+  font-size: 18px;
+  padding: 0;
+}
+
+.pontuacao-rodada-0,
+.pontuacao-rodada-1 {
+  position: relative;
+  background-color: rgb(230, 190, 118);
+  display: inline-block;
+  width: 50px;
+  height: 40px;
+  font-size: 24px;
+  text-align: center;
+}
+
+.botao {
+  padding: 12px;
+  font-size: 16px;
+  background-color: aliceblue;
+}
+
+.botoes {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  margin: auto;
+}
+
+.pontuacao-global {
+  position: relative;
+  top: 40px;
+  height: 40px;
+  text-align: center;
+  padding: 10px;
+  background-color: rgb(241, 125, 125);
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Atividade da Aula 6</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      class="favicon"
+      href="./dado.PNG"
+      type="image/gif"
+      sizes="16x16"
+    />
+  </head>
+  <body>
+    <h1 class="titulo">Jogo De Dados</h1>
+
+    <div class="container">
+      <div class="jogadores">
+        <div class="jogador0">
+          <p class="nome-jogador">Jogador 1</p>
+          <div class="pontuacao-global" id="pontuacao-global-0"></div>
+          <div class="caixa-pontuacao-rodada-0">
+            <p>Pontuação da rodada</p>
+            <div class="pontuacao-rodada-0" id="pontuacao-rodada-0"></div>
+          </div>
+        </div>
+        <div class="jogador1">
+          <p class="nome-jogador">Jogador 2</p>
+          <div class="pontuacao-global" id="pontuacao-global-1"></div>
+          <div class="caixa-pontuacao-rodada-1">
+            <p>Pontuação da rodada</p>
+            <div class="pontuacao-rodada-1" id="pontuacao-rodada-1"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="botoes">
+        <button class="botao-lancar-dado" id="botao-lancar-dado">
+          Lançar dado
+        </button>
+        <button class="botao-passar-vez" id="botao-passar-vez">
+          Passar vez
+        </button>
+        <button class="botao-novo-jogo" id="botao-novo-jogo" type="button">
+          Novo Jogo
+        </button>
+      </div>
+    </div>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>
