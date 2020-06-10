@@ -1,0 +1,30 @@
+.imagem {
+  height: 500px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+html {
+  font-size: 62.5%;
+}
+main {
+  display: block;
+  width: 80%;
+  padding: 20px;
+  color: rgb(4, 44, 19);
+}
+.texto {
+  font-size: 200%;
+}
+strong {
+  font-size: xx-large;
+  color: darkgreen;
+}
+li {
+  border: 1px solid darkgray;
+}
+b {
+  display: block;
+  font-size: 200%;
+  text-align: center;
+  background-color: rgb(65, 144, 170);
+}
