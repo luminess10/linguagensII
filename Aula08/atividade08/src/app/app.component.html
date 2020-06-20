@@ -12,12 +12,16 @@
         <div class="imagem_centro"></div>
         <div class="navbar">
           <a routerLink="/home">Home</a><br />
-          <a routerLink="/professores">Professores</a><br />
+          <a routerLink="/professores">Cursos/Professores</a><br/>
+          <a routerLink="/alunos">Alunos</a><br/>
           <a routerLink="/sugestoes">Sugestões</a><br />
           <input type="text" placeholder="Search.." />
         </div>
         <router-outlet></router-outlet>
       </article>
     </div>
+    <footer [ngClass]="['rodape']">
+      Copyrights-All Rights Reserved To Karina.
+    </footer>
   </body>
 </html>

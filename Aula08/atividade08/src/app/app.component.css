@@ -1,6 +1,6 @@
 .imagem_centro {
   height: 270px;
-  background-image: url("../assets/img/banner-computacao.jpg");
+  background-image: url("../assets/img/maua.jpg");
   background-size: 100% 100%, cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -65,4 +65,15 @@ b {
   .navbar input[type="text"] {
     border: 1px solid #ccc;
   }
+}
+
+.rodape{
+  border-top: 1px solid lightgrey;
+  border-bottom: lightslategrey;
+  padding: 8px;
+  margin-top: 12px;
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+  font-size: 12px;
 }

@@ -4,32 +4,8 @@
       <th>Professores</th>
     </thead>
     <tbody>
-      <tr>
-        <td>Angelo Sebastiao Zanini</td>
-      </tr>
-      <tr>
-        <td>Edval Delbone</td>
-      </tr>
-      <tr>
-        <td>Sergio Ribeiro Augusto</td>
-      </tr>
-      <tr>
-        <td>Fernando Silveira Madani</td>
-      </tr>
-      <tr>
-        <td>Susana Marraccini Giampietri Lebrao</td>
-      </tr>
-      <tr>
-        <td>Cassia Silveira de Assis</td>
-      </tr>
-      <tr>
-        <td>Luciano Gonçalves Ribeiro</td>
-      </tr>
-      <tr>
-        <td>Eliana Paula Ribeiro</td>
-      </tr>
-      <tr>
-        <td>David Garcia Penof</td>
+      <tr *ngFor="let pessoas of nomeProf">
+        <td>{{pessoas.professores}}</td>
       </tr>
     </tbody>
   </table>

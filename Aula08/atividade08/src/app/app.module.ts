@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms'
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -8,6 +9,9 @@ import { ProfessoresComponent } from './pages/professores/professores.component'
 import { SugestoesComponent } from './pages/sugestoes/sugestoes.component';
 import { ListaprofessoresComponent } from './pages/partials/listaprofessores/listaprofessores.component';
 import { ListacursosComponent } from './pages/partials/listacursos/listacursos.component';
+import { ListacamposComponent } from './pages/partials/listacampos/listacampos.component';
+import { AlunosComponent } from './pages/alunos/alunos.component';
+import { SombraDirective } from './diretivas/sombra.directive';
 
 @NgModule({
   declarations: [
@@ -16,11 +20,15 @@ import { ListacursosComponent } from './pages/partials/listacursos/listacursos.c
     ProfessoresComponent,
     SugestoesComponent,
     ListaprofessoresComponent,
-    ListacursosComponent
+    ListacursosComponent,
+    ListacamposComponent,
+    AlunosComponent,
+    SombraDirective
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

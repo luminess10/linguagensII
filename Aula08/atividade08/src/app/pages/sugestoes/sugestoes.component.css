@@ -1,6 +1,7 @@
-strong {
-  display: block;
-  width: 80%;
-  padding: 20px;
-  color: rgb(4, 44, 19);
+.eh-rosa{
+    background-color: lightpink;
+}
+
+.eh-azul{
+    background-color: lightsteelblue;
 }

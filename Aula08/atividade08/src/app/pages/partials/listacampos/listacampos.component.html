@@ -1,0 +1,27 @@
+<main class="texto">
+  <p>
+    <strong class="titulo">{{ campos }}</strong>
+  </p>
+  <div class="container">
+    <div class="row">
+      <label for="nomeCurso">Nome do Curso</label>
+      <input
+        class="form-control"
+        type="text"
+        id="nomeInput"
+        placeholder="Digite nome do curso..."
+        [(ngModel)]="nomeCurso"
+        #nomeInput
+      />
+    </div>
+    <div class="row" id="botao">
+      <button
+        type="button"
+        class="btn btn-dark mt-2"
+        (click)="adicionar(nomeInput.value)"
+      >
+        Adicionar
+      </button>
+    </div>
+  </div>
+</main>

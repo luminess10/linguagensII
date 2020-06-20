@@ -12,8 +12,8 @@
 
   <body>
     <article>
-      <main class="texto">
-        <p>
+      <main class="texto" [ngClass]="{'eh-azul': ehAzul(),'eh-rosa': !ehAzul()}">
+        <p [ngStyle]="titulo()">
           <strong>SUGESTÕES</strong>
         </p>
         <div class="container">
@@ -58,7 +58,7 @@
               </select>
             </div>
             <div class="center">
-              <button>Enviar</button>
+              <button type="button" class="btn btn-dark mt-2 btn-block" (click)="alterar()">Enviar</button>
             </div>
           </form>
         </div>
