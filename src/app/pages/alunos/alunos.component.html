@@ -1,0 +1,78 @@
+<strong class="titulo">{{titulo}}</strong>
+<div class="container">
+  <form #pessoaForm="ngForm">
+    <div class="row">
+      <div class="form-group col-12">
+        <label for="nomeInput">Nome</label>
+        <input
+          type="text"
+          placeholder="Digite o nome"
+          class="form-control p-2"
+          name="nome"
+          ngModel
+        />
+      </div>
+    </div>
+    <div class="row">
+      <div class="form-group col-md-4">
+        <label for="idadeInput">Idade</label>
+        <input
+          type="text"
+          placeholder="Idade"
+          class="form-control p-2"
+          name="idade"
+          ngModel
+        />
+      </div>
+      <div class="form-group col-md-4">
+        <label for="emailInput">Email</label>
+        <input
+          type="text"
+          placeholder="Email"
+          class="form-control p-2"
+          name="email"
+          ngModel
+        />
+      </div>
+      <div class="form-group col-md-4">
+        <label for="cursoInput">Curso</label>
+        <select
+          name=""
+          id="cursoInput"
+          class="form-control p-2"
+          name="curso"
+          ngModel
+        >
+          <option value="">Selecione</option>
+          <option *ngFor="let p of cursos">{{ p }}</option>
+        </select>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <button
+          type="submit"
+          class="btn btn-dark btn-block"
+          (click)="salvar(pessoaForm)"
+        >
+          Enviar
+        </button>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4 col-12" *ngFor="let aluno of alunos">
+        <div class="card" style="width: 18rem;" id="card">
+          <div class="card-header" id="header">
+            Novo Aluno
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Nome: {{ aluno.nome}}</li>
+            <li class="list-group-item">Idade: {{ aluno.idade}}</li>
+            <li class="list-group-item">Email: {{ aluno.email}}</li>
+            <li class="list-group-item">Curso: {{ aluno.curso}}</li>
+          </ul>
+        </div>   
+      </div>
+    </div>
+  </form>
+</div>

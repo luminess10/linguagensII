@@ -1,0 +1,16 @@
+#card{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: rgb(14, 64, 77);
+}
+
+.titulo{
+    display: block;
+    padding: 18px;
+    margin-top: 8px;
+    font-size: medium;
+}
+
+#header{
+    color: white;
+}
