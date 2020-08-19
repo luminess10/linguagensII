@@ -1,0 +1,5 @@
+<app-cabecalho></app-cabecalho>
+<main>
+  <app-cliente-inserir (livroAdicionado)="onLivroAdicionado($event)"></app-cliente-inserir>
+  <app-cliente-lista [livros]="livros"></app-cliente-lista>
+</main>
